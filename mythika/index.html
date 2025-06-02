@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta property="og:image" content="img/mythika-OG.png">
+  <title>Mythika Studio | Design with Soul, Magic and Purpose</title>
+  <meta content="Somos um estúdio de design que cria experiências incríveis com interfaces encantadoras, magia e propósito." name="description" />
+  <meta content="Mythika Studio | Design with Soul, Magic and Purpose" property="og:title" />
+  <meta name="keywords" content="UX Design, UI Design, Design de Interface, Pesquisa UX, Design de Experiência, Mythika Design Studio" />
+  <meta name="robots" content="index, follow">
+  <meta content="Somos um estúdio de design que cria experiências incríveis com interfaces encantadoras, magia e propósito." property="og:description" />
+  <meta content="img/mythika-OG.png" property="og:image" />
+  <meta content="Mythika Studio | Design with Soul, Magic and Purpose" property="twitter:title" />
+  <meta content="Somos um estúdio de design que cria experiências incríveis com interfaces encantadoras, magia e propósito." property="twitter:description" />
+  <meta content="img/mythika-OG.png" property="twitter:image" />
+  <meta property="og:type" content="website" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon-96x96.png?v=1" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg?v=1" />
+  <link rel="shortcut icon" href="img/favicon.ico?v=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png?v=1" />
+  <meta name="apple-mobile-web-app-title" content="Mythika" />
+  <link rel="manifest" href="img/site.webmanifest?v=1" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <img src="img/mythika-logo.svg" alt="Mythika Studio" class="header__logo-img">
+      </div>
+
+      <!-- Menu Desktop -->
+      <nav class="header__nav header__nav--desktop">
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="#home" class="header__menu-link">Home</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#sobre" class="header__menu-link">Sobre</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#servicos" class="header__menu-link">Serviços</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#segmentos" class="header__menu-link">Segmentos</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#projetos" class="header__menu-link">Projetos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Botão CTA Desktop -->
+      <div class="header__cta header__cta--desktop">
+        <a href="#contato" class="header__btn">Contate-nos</a>
+      </div>
+
+      <!-- Botão Menu Mobile -->
+      <button class="header__mobile-toggle" id="mobileMenuToggle">
+        <img src="icons/menu-hamburguer.svg" alt="Menu" class="header__mobile-icon">
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu Mobile Off-Canvas -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu__content">
+      <div class="mobile-menu__header">
+        <div class="mobile-menu__logo">
+          <img src="img/mythika-logo.svg" alt="Mythika Studio" class="mobile-menu__logo-img">
+        </div>
+        <button class="mobile-menu__close" id="mobileMenuClose">
+          <img src="icons/icon-close.svg" alt="Fechar" class="mobile-menu__close-icon">
+        </button>
+      </div>
+
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#home" class="mobile-menu__link">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#sobre" class="mobile-menu__link">Sobre</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#servicos" class="mobile-menu__link">Serviços</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#segmentos" class="mobile-menu__link">Segmentos</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#projetos" class="mobile-menu__link">Projetos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu__cta">
+        <a href="#contato" class="mobile-menu__btn">Contate-nos</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="s-hero" id="home">
+    <div class="s-hero__container">
+      <div class="s-hero__content">
+
+        <div class="s-hero__left hero-left">
+          <h1 class="s-hero__title hero-title">
+            Transformamos ideias em interfaces encantadoras e funcionais
+          </h1>
+
+          <p class="s-hero__subtitle hero-subtitle">
+            UX/UI Design focado em experiência, identidade visual e resultados reais para produtos digitais.
+          </p>
+
+          <a href="#contato" class="s-hero__cta hero-cta">
+            Vamos desenhar sua ideia?
+          </a>
+        </div>
+
+        <div class="s-hero__right hero-right">
+          <img src="img/ilustra-zaya-hero.svg" alt="Ilustração Zaya - Personagem mística da Mythika" class="s-hero__illustration hero-illustration">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Quem Somos -->
+  <section class="s-quemsomos" id="sobre">
+    <div class="s-quemsomos__container">
+      <div class="s-quemsomos__content">
+
+        <div class="s-quemsomos__left">
+          <img src="img/ilustra-quemsomos.svg" alt="Ilustração da Zyra, guardiã da estética encantada da Mythika" class="s-quemsomos__illustration">
+        </div>
+
+        <div class="s-quemsomos__right">
+          <div class="s-quemsomos__badge">
+            ✨ Conheça a Zyra, guardiã da estética encantada aqui na Mythika. ✨
+          </div>
+
+          <h2 class="s-quemsomos__title">
+            <span class="s-quemsomos__title--primary">
+              Aqui na Mythika, acreditamos que o design vai muito além do que se vê:
+            </span>
+            <span class="s-quemsomos__title--highlight">
+              ele conecta, transforma e emociona.
+            </span>
+          </h2>
+
+          <div class="s-quemsomos__text">
+            <p>
+              Sou Zaya, guia criativa da Mythika. Aqui, o design vai além da estética ele traduz ideias em experiências memoráveis.
+            </p>
+
+            <p>
+              Na Mythika, criamos produtos digitais com alma: cada projeto nasce da fusão entre estratégia, identidade e experiência do usuário.
+            </p>
+            <p>
+              Unimos simbolismo, pesquisa e emoção para entregar soluções visuais que fazem sentido e geram conexão.
+            </p>
+            <p>
+              Seja um site, um app ou uma interface intuitiva, nossa missão é transformar sua visão em algo funcional, original e encantador.
+            </p>
+          </div>
+
+          <a href="#contato" class="s-quemsomos__cta">
+            ✨ Vamos criar algo com propósito?
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Serviços -->
+  <section class="s-servicos" id="servicos">
+    <div class="s-servicos__container">
+      <div class="s-servicos__header">
+        <div class="s-servicos__badge">
+          ✨ Nossas magias criativas. ✨
+        </div>
+
+        <h2 class="s-servicos__title">
+          Nossos Serviços
+        </h2>
+
+        <p class="s-servicos__subtitle">
+          Descubra os serviços que unem estética, intenção e funcionalidade
+        </p>
+      </div>
+
+      <div class="s-servicos__cards">
+        <div class="s-servicos__card">
+          <div class="s-servicos__card-icon">
+            <img src="icons/design-interface.png" alt="Ícone Design de Interfaces" class="s-servicos__icon">
+          </div>
+          <h3 class="s-servicos__card-title">Design de Interfaces</h3>
+          <p class="s-servicos__card-description">
+            Criação de interfaces únicas para sites, landing pages, one pages e aplicativos. Design funcional, encantador e com a alma do seu projeto.
+          </p>
+        </div>
+
+        <div class="s-servicos__card">
+          <div class="s-servicos__card-icon">
+            <img src="icons/componentes-ds.png" alt="Ícone Componentes e Design Systems" class="s-servicos__icon">
+          </div>
+          <h3 class="s-servicos__card-title">Componentes e Design Systems</h3>
+          <p class="s-servicos__card-description">
+            Criação de bibliotecas visuais, UI kits e documentação para garantir consistência e escalabilidade.
+          </p>
+        </div>
+
+        <div class="s-servicos__card">
+          <div class="s-servicos__card-icon">
+            <img src="icons/redesign.png" alt="Ícone Análise e Redesign" class="s-servicos__icon">
+          </div>
+          <h3 class="s-servicos__card-title">Análise & Redesign de Interfaces</h3>
+          <p class="s-servicos__card-description">
+            Avaliação de interfaces existentes com foco em melhorias visuais e usabilidade.
+          </p>
+        </div>
+      </div>
+
+      <div class="s-servicos__cta-wrapper">
+        <a href="#contato" class="s-servicos__cta">
+          Solicitar design para seu projeto
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Entrega -->
+  <section class="s-entrega" id="entrega">
+    <div class="s-entrega__container">
+      <div class="s-entrega__content">
+
+        <div class="s-entrega__left">
+          <div class="s-entrega__badge">
+            ✨ Nosso ritual de entrega. ✨
+          </div>
+
+          <h2 class="s-entrega__title">
+            Como Entregamos seu projeto
+          </h2>
+
+          <p class="s-entrega__intro">
+            Na Mythika, cada projeto é tratado como um encantamento único. Acreditamos que a entrega deve ser tão mágica quanto o processo de criação.
+          </p>
+
+          <h3 class="s-entrega__subtitle">
+            🔮 Como entregamos nossos feitiços visuais?
+          </h3>
+
+          <div class="s-entrega__list">
+            <div class="s-entrega__item">
+              <h4 class="s-entrega__item-title">Organização:</h4>
+              <p class="s-entrega__item-description">
+                Você recebe todos os arquivos organizados com nomeações claras e versões finais bem definidas.
+              </p>
+            </div>
+
+            <div class="s-entrega__item">
+              <h4 class="s-entrega__item-title">Documentação:</h4>
+              <p class="s-entrega__item-description">
+                Fornecemos guias e explicações para que você saiba exatamente como usar cada parte do design.
+              </p>
+            </div>
+
+            <div class="s-entrega__item">
+              <h4 class="s-entrega__item-title">Formatos sob medida:</h4>
+              <p class="s-entrega__item-description">
+                Entregamos nos formatos ideais para web, dispositivos móveis ou impressão, conforme a necessidade do projeto.
+              </p>
+            </div>
+
+            <div class="s-entrega__item">
+              <h4 class="s-entrega__item-title">Acesso ao portal arcano:</h4>
+              <p class="s-entrega__item-description">
+                Disponibilizamos tudo por um link seguro (como Notion, Google Drive ou Figma), onde você pode acessar sempre que quiser.
+              </p>
+            </div>
+          </div>
+
+          <p class="s-entrega__final">
+            Nosso objetivo? Que você se sinta guiado(a), confiante e encantado(a) com cada entrega. 🌙✨
+          </p>
+        </div>
+
+        <div class="s-entrega__right">
+          <img src="img/ilustra-entrega.svg" alt="Ilustração da entrega de projetos da Mythika" class="s-entrega__illustration">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- Mythika Animations System -->
+  <script src="js/main-animations.js"></script>
+  <script src="js/hero-animations.js"></script>
+  <script src="js/quemsomos-animations.js"></script>
+  <script src="js/servicos-animations.js"></script>
+  <script src="js/entrega-animations.js"></script>
+
+  <!-- Main Scripts -->
+  <script src="js/main-scripts.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>

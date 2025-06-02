@@ -1,0 +1,50 @@
+@use "sass:color";
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(
+    135deg,
+    $mythika-purple-dark 0%,
+    color.adjust($mythika-purple-dark, $lightness: -10%) 100%
+  );
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Serve pra não somar o padding*/
+  border: none; /* Tirar as bordas*/
+  outline: none; /* Tirar outline*/
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif; /* Familia de fonte que mais se repete*/
+
+  -webkit-font-smoothing: antialiased;
+  color: #ffff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%; /* Regra pra sair de px para rem, dividindo por 10*/
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}

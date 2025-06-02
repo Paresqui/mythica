@@ -1,0 +1,43 @@
+@mixin responsive($screenwidth) {
+  @media (max-width: $screenwidth) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-total-center {
+  @include flex-center;
+  justify-content: center;
+}
+
+@mixin flex-center-justify {
+  @include flex-center;
+  justify-content: space-between;
+}
+
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+$breakpoints: (
+  "laptop": 1200px,
+  "tablet": 991px,
+  "mobile": 390px,
+);
+
+@mixin responsivo($breakpoint-name) {
+  @if map-has-key($breakpoints, $breakpoint-name) {
+    @media (max-width: map-get($breakpoints,$breakpoint-name)) {
+      @content;
+    }
+  } @else {
+    @warn 'Este breakpoint nao existe';
+  }
+}
